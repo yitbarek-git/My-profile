@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: Poppins, sans-serif;
+}
+img{
+    width: 300px;
+    height: auto;
+    border-radius: 80%;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: #121217;
+    color: #fff;
+}
+
+.header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s ease;
+}   
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    border-bottom: 2px solid #b7b7b7;
+}
+
+nav a:hover, nav a:active{
+    color: #b74b4b;
+    border-bottom: 2px solid #b74b4b; /* fixed */
+}
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #b74b4b;
+        border-bottom: 3px solid #b74b4b;
+        border-bottom-left-radius: 2rem;
+        padding: 2rem; /* fixed */
+        background: #121217; /* fixed typo */
+        border-top: 0.1rem solid #b74b4b; /* fixed */
+    }
+}
+
+nav .active{
+    display: block;
+}
+
+nav a{
+    display: block;
+    margin: 3rem 0;
+    font-size: 2rem;
+}
+
+nav a:hover, nav a:active{
+    padding: 1em;
+    border-radius: 0.5em;
+    border-bottom: 0.5rem solid #b74b4b;
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 10%;
+}
