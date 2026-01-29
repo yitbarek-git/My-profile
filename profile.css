@@ -260,3 +260,150 @@ span {
     max-width: 70vw;
     margin-top: 4rem;
 }
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    background-color: black;
+}
+@media (max-width: 1000px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.profile.profile-section h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+span {
+    color: #b74b4b;
+}
+
+.profile-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+.profile-section p{
+    font-size: 1.5rem;
+    font-family: arial, sans-serif;
+}
+.profile img {
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #b74b4b;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.social-icons {
+    display: inline-flex;
+    justify-self: center;
+    align-self: center;
+    gap: 8px;
+    background-color: transparent;
+    border-radius: 50%;
+    color: #b74b4b;
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 2rem 2rem 4rem 0;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #000000;
+    background-color: #b74b4b;
+    box-shadow: 0 0 5px #fff;
+}
+.btn{
+    display: inline-block;
+    padding: 2rem;
+    background-color: #000000;
+    border-radius: 90%;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    border: 2px solid #b74b4b;
+   cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.03);
+    background-color: #b74b4b;
+    color:black;
+    box-shadow: 0 0 3px hsl(0, 43%, 95%);
+}
+.typing-text{
+    font-weight: 600;
+    font-size: 30px;
+    min-width: 250px;
+}
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before {
+    content: "software developer";
+    color: #b74b4b;
+    animation: words 20s infinite;
+   }
+.typing-text span::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: 8;
+    animation: cursor 0.8s infinite;
+}
+@keyframes cursor{
+    to{
+        border-left: 3px solid #b74b4b;
+    }
+}
+@keyframes words {
+    0%, 20% {
+        content: "Web Developer";
+    }
+    21%, 40% {
+        content: "Content Creator";
+    }
+    41%, 60% {
+        content: "Web Designer";
+    }
+    61%, 80% {
+        content: "Script Writer";
+    }
+    81%, 100% {
+        content: "Digital Marketer";
+    }
+}
+
+@media (max-width:1000px){
+.profile-section{
+    gap: 4rem;
+}
+}
+@media (max-width:1000px){
+.profile-section{
+    flex-direction: column;
+    margin: 5rem 4rem;
+}
+}
+.profile .profile-section h3{
+    font-size: 2.5rem;
+}
+.profile .profile-section h1 {
+    font-size: 4rem;
+}
+.profile img{
+    width: 70%;
+    max-width: 70vw;
+    margin-top: 4rem;
+}
