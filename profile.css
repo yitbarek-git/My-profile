@@ -46,6 +46,18 @@ body {
 .logo:hover {
     transform: scale(1.1);
 }
+#menu-btn{
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+@media(max-width: 990px){
+    #menu-btn{
+        display: block;
+    }
+}
+
 
 nav a {
     font-size: 1.8rem;
@@ -80,13 +92,15 @@ nav .active {
         background: #121217;
         border-top: 0.1rem solid #b74b4b;
     }
+    nav.active{
+        display: block;    
+    }
 
     nav a {
         display: block;
         margin: 3rem 0;
         font-size: 2rem;
     }
-
     nav a:hover,
     nav a:active {
         padding: 1em;
@@ -106,6 +120,12 @@ section {
     justify-content: center;
     gap: 8rem;
     background-color: black;
+}
+@media (max-width: 1000px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .profile.profile-section h1 {
@@ -140,21 +160,19 @@ span {
     justify-self: center;
     align-self: center;
     gap: 8px;
-    width: 4em;
-    height: 4em;
     background-color: transparent;
     border-radius: 50%;
     color: #b74b4b;
     cursor: pointer;
     font-size: 2rem;
-    margin: 1rem;
+    margin: 2rem 2rem 4rem 0;
     transition: 0.3s ease;
 }
 
 .social-icons a:hover {
     color: #000000;
     background-color: #b74b4b;
-    box-shadow: 0 0 5px #b74b4b;
+    box-shadow: 0 0 5px #fff;
 }
 .btn{
     display: inline-block;
@@ -228,7 +246,7 @@ span {
 @media (max-width:1000px){
 .profile-section{
     flex-direction: column;
-    margin-inline-start: 5rem 4rem;
+    margin: 5rem 4rem;
 }
 }
 .profile .profile-section h3{
@@ -238,6 +256,7 @@ span {
     font-size: 4rem;
 }
 .profile img{
-    width: 70vh;
+    width: 70%;
+    max-width: 70vw;
     margin-top: 4rem;
 }
