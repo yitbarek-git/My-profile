@@ -60,10 +60,30 @@
 <script>
 const menuBtn = document.getElementById("menu-btn");
 const nav = document.querySelector("nav");
+const logo = document.querySelector(".logo");
 
-menuBtn.onclick = () => {
+menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation(); 
     nav.classList.toggle("active");
-};
+});
+
+
+document.addEventListener("click", (e) => {
+    if (!nav.contains(e.target) && !menuBtn.contains(e.target)) {
+        nav.classList.remove("active");
+    }
+});
+
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        logo.style.opacity = "0";
+        logo.style.pointerEvents = "none";
+    } else {
+        logo.style.opacity = "1";
+        logo.style.pointerEvents = "auto";
+    }
+});
 </script>
 </body>
 </html>
