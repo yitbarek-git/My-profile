@@ -18,6 +18,7 @@
             <a href="experience.html">Experience</a>
             <a href="mailto:ykifleyohans@gmail.com">Contact</a>
         </nav>
+        <i class="fa-solid fa-bars" id="menu-btn"></i>
     </div>
 </header>
 <section class="profile">
@@ -51,8 +52,18 @@
             <i class="fa-brands fa-tiktok"></i>
         </a>
     </div>
+        <div>
+          <a href="#" class="btn">Hire Me</a>
+       </div>
     </div>
-    <a href="#" class="btn">Hire Me</a>
 </section>
+<script>
+const menuBtn = document.getElementById("menu-btn");
+const nav = document.querySelector("nav");
+
+menuBtn.onclick = () => {
+    nav.classList.toggle("active");
+};
+</script>
 </body>
 </html>
