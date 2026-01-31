@@ -73,7 +73,11 @@ document.addEventListener("click", (e) => {
         nav.classList.remove("active");
     }
 });
-
+window.addEventListener("scroll", () => {
+    if (window.innerWidth <= 995) { 
+        nav.classList.remove("active");
+    }
+});
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
