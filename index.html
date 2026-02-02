@@ -9,7 +9,7 @@
     <link rel="icon" href="profile.png" type="png">
 </head>
 <body>
-<header>
+<header id="header">
     <div class="header">
         <div class="logo">Yitbarek</div>
         <nav>
@@ -54,7 +54,7 @@
         </a>
     </div>
         <div>
-          <a href="#" class="btn">Hire Me</a>
+          <a href="mailto:ykifleyohans@gmail.com" class="btn">Hire Me</a>
        </div>
     </div>
 </section>
@@ -62,26 +62,42 @@
 const menuBtn = document.getElementById("menu-btn");
 const nav = document.querySelector("nav");
 const logo = document.querySelector(".logo");
+const header = document.querySelector(".header"); // header wrapper
+const profile = document.querySelector(".profile"); // section below header
 
 menuBtn.addEventListener("click", (e) => {
     e.stopPropagation(); 
-    nav.classList.toggle("active");
+
+    if (nav.classList.contains("active")) {
+        // close menu
+        nav.classList.remove("active");
+        profile.style.marginTop = "0"; // reset content position
+    } else {
+     
+        nav.classList.add("active");
+        profile.style.marginTop = nav.scrollHeight + "px"; // push content down
+    }
 });
 
 
 document.addEventListener("click", (e) => {
-    if (!nav.contains(e.target) && !menuBtn.contains(e.target)) {
+    if (!header.contains(e.target)) {
         nav.classList.remove("active");
-    }
-});
-window.addEventListener("scroll", () => {
-    if (window.innerWidth <= 995) { 
-        nav.classList.remove("active");
+        profile.style.marginTop = "0";
     }
 });
 
+
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
+    if (window.innerWidth <= 1000) { 
+        nav.classList.remove("active");
+        profile.style.marginTop = "0";
+    }
+});
+
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
         logo.style.opacity = "0";
         logo.style.pointerEvents = "none";
     } else {
