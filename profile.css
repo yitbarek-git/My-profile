@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -83,12 +84,12 @@ nav .active {
         top: 100%;
         right: 0;
         display: none;
-        width: 40%;
+        width: 30%;
         border-left: 3px solid #b74b4b;
         border-bottom: 3px solid #b74b4b;
         border-bottom-left-radius: 2rem;
-        padding: 2rem;
-        margin: 4rem;
+        padding: 1rem;
+        margin: 3rem;
         background: #121217;
         border-top: 0.1rem solid #b74b4b;
     }
@@ -98,7 +99,7 @@ nav .active {
 
     nav a {
         display: block;
-        margin: 3rem 0;
+        margin: 0.1rem 0;
         font-size: 2rem;
     }
     nav a:hover,
