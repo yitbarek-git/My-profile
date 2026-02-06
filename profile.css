@@ -89,7 +89,7 @@ nav .active {
         border-bottom: 3px solid #b74b4b;
         border-bottom-left-radius: 2rem;
         padding: 1rem;
-        margin: 3rem;
+        margin: 4rem;
         background: #121217;
         border-top: 0.1rem solid #b74b4b;
     }
@@ -129,7 +129,7 @@ section {
     }
 }
 
-.profile h1 {
+.profile-section h1 {
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.2;
