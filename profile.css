@@ -53,13 +53,11 @@ nav a {
   font-size: 1.8rem;
   color: #fff;
   margin-left: 4rem;
-  border-bottom: 2px solid #b7b7b7;
   transition: 0.3s;
 }
 nav a:hover,
 nav a:active {
   color: #b74b4b;
-  border-bottom: 2px solid #b74b4b;
 }
 
 /* Mobile navigation */
@@ -68,15 +66,16 @@ nav a:active {
     position: absolute;
     top: 100%;
     right: 0;
-    display: none;
-    width: 30%;
+    display: none; 
+    width: 40%;
     background: #121217;
     border-left: 3px solid #b74b4b;
     border-bottom: 3px solid #b74b4b;
-    border-bottom-left-radius: 2rem;
+    border-top: 0.1rem solid #b74b4b;
+    border-radius: 0.81rem;
     padding: 1rem;
     margin: 3rem;
-    border-top: 0.1rem solid #b74b4b;
+    
   }
   nav.active { display: block; }
   nav a {
@@ -186,7 +185,7 @@ section { min-height: 100vh; padding: 5rem 10%; }
 }
 .btn:hover {
   transform: scale(1.03);
-  background: #b74b4b;
+  background: hsl(0, 43%, 81%);
   color: black;
   box-shadow: 0 0 3px hsl(0, 43%, 95%);
 }
