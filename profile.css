@@ -1,6 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-/* Reset & base font */
+/* Theme variables */
+:root {
+  --bg: #000;
+  --text: #fff;
+  --primary: #b74b4b;
+  --nav-bg: #121217;
+}
+
+body.light {
+  --bg: hsl(0, 1%, 90%);
+  --text: #111;
+  --nav-bg: #ffffff;
+}
+
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -8,15 +22,18 @@
   font-family: Poppins, sans-serif;
 }
 
-html { font-size: 62.5%; }
-
-body {
-  width: 100%;
-  color: #fff;
-  background: #000;
+html {
+  font-size: 62.5%;
 }
 
-/* Header container */
+/* Base body */
+body {
+  width: 100%;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Header */
 .header {
   position: fixed;
   top: 0;
@@ -24,40 +41,65 @@ body {
   width: 100%;
   padding: 1rem 10%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  z-index: 1000;
+  justify-content: space-between;
+  background-color: hsl(0, 5%, 60%);
+  z-index: 1000; 
+  margin-bottom: 8rem;
 }
 
-/* Logo style */
+/* Logo */
 .logo {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #b74b4b;
+  color: var(--primary);
   cursor: pointer;
-  transition: 0.5s ease;
+  transition: transform 0.5s ease;
 }
-.logo:hover { transform: scale(1.1); }
 
-/* Mobile menu icon */
-#menu-btn {
-  font-size: 2rem;
-  color: #fff;
-  cursor: pointer;
-  display: none;
+.logo:hover {
+  transform: scale(1.1);
 }
-@media (max-width: 990px) { #menu-btn { display: block; } }
 
 /* Navigation links */
 nav a {
   font-size: 1.8rem;
-  color: #fff;
+  color: var(--text);
   margin-left: 4rem;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
+
 nav a:hover,
 nav a:active {
-  color: #b74b4b;
+  color: var(--primary);
+}
+
+/* Menu & theme icons */
+#menu-btn,
+#theme-toggle {
+  font-size: 2rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+#theme-toggle {
+  margin-left: 2rem;
+  transition: transform 0.3s ease;
+}
+
+#theme-toggle:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+
+/* Mobile menu icon */
+#menu-btn {
+  display: none;
+}
+
+@media (max-width: 990px) {
+  #menu-btn {
+    display: block;
+  }
 }
 
 /* Mobile navigation */
@@ -66,33 +108,39 @@ nav a:active {
     position: absolute;
     top: 100%;
     right: 0;
-    display: none; 
+    display: none;
     width: 40%;
-    background: #121217;
-    border-left: 3px solid #b74b4b;
-    border-bottom: 3px solid #b74b4b;
-    border-top: 0.1rem solid #b74b4b;
-    border-radius: 0.81rem;
+    background: var(--nav-bg);
+    border-left: 3px solid var(--primary);
+    border-bottom: 3px solid var(--primary);
+    border-top: 0.1rem solid var(--primary);
+    border-radius: 0.8rem;
     padding: 1rem;
-    margin: 3rem;
-    
   }
-  nav.active { display: block; }
+
+  nav.active {
+    display: block;
+  }
+
   nav a {
     display: block;
     margin: 0.5rem 0;
     font-size: 2rem;
   }
+
   nav a:hover,
   nav a:active {
     padding: 1rem;
     border-radius: 0.5rem;
-    border-bottom: 0.5rem solid #b74b4b;
+    border-bottom: 0.5rem solid var(--primary);
   }
 }
 
-/* Section spacing */
-section { min-height: 100vh; padding: 5rem 10%; }
+/* Sections */
+section {
+  min-height: 100vh;
+  padding: 5rem 10%;
+}
 
 /* Profile layout */
 .profile {
@@ -101,6 +149,7 @@ section { min-height: 100vh; padding: 5rem 10%; }
   justify-content: center;
   gap: 4rem;
 }
+
 @media (max-width: 1000px) {
   .profile {
     flex-direction: column;
@@ -108,43 +157,42 @@ section { min-height: 100vh; padding: 5rem 10%; }
   }
 }
 
-/* Profile heading */
+/* Headings */
 .profile h1 {
+  margin-top: 5rem;
   font-size: 6rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
-/* Profile text container */
+/* Text block */
 .profile-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-/* Subheading */
 .profile-section h3 {
   font-size: 1.8rem;
   margin-bottom: 4rem;
   font-weight: 700;
 }
 
-/* Paragraphs */
 .profile-section p {
   font-size: 1.5rem;
-  font-family: Arial, sans-serif;
   margin-bottom: 1.5rem;
+  word-spacing: 0.2rem;
 }
 
 /* Profile image */
 .profile img {
   width: 32vw;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px #b74b4b;
+  box-shadow: 0 0 0 4px var(--primary);
   cursor: pointer;
-  transition: 0.2s linear;
+  transition: transform 0.2s linear;
 }
+
 @media (max-width: 1000px) {
   .profile img {
     width: 70%;
@@ -155,59 +203,64 @@ section { min-height: 100vh; padding: 5rem 10%; }
 
 /* Social icons */
 .social-icons {
-  display: inline-flex;
-  gap: 8px;
-  font-size: 2rem;
-  margin: 2rem 2rem 4rem 0;
-  cursor: pointer;
-  color: #b74b4b;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  font-size: 3rem;
+  margin: 8rem 0 4rem;
 }
+
 .social-icons a:hover {
-  color: #fff;
-  background: #b74b4b;
+  color: #000;
+  background: #fff;
   box-shadow: 0 0 5px #fff;
   border-radius: 50%;
   padding: 0.5rem;
+  transform: scale(1.03); 
 }
 
-/* Call-to-action button */
+/* Button */
 .btn {
   display: inline-block;
   padding: 2rem;
-  background: #b82e2e;
-  border-radius: 90%;
-  font-size: 1.5rem;
+  background: var(--primary);
+  border-radius: 50%;
+  font-size: 2rem;
   letter-spacing: 0.3rem;
-  font-weight: 700;
-  border: 2px solid #b74b4b;
+  font-weight: 900;
   cursor: pointer;
   transition: 0.3s;
 }
+
 .btn:hover {
   transform: scale(1.03);
-  background: hsl(0, 43%, 81%);
-  color: black;
-  box-shadow: 0 0 3px hsl(0, 43%, 95%);
+  background: hsl(0, 43%, 61%);
+  color: #000;
+  box-shadow: 0 0 3px hsl(0, 43%, 65%);
 }
 
-/* Typing text animation */
+/* Typing effect */
 .typing-text {
-  font-weight: 600;
   font-size: 3rem;
+  font-weight: 600;
   min-width: 250px;
 }
-.typing-text span { position: relative; }
+
+.typing-text span {
+  position: relative;
+}
+
 .typing-text span::after {
   content: "";
   position: absolute;
   right: 0;
   width: 2px;
   height: 100%;
-  background: #b74b4b;
-  animation: blink 0.8s infinite;
+  background: var(--primary);
+  animation: blink 8s infinite;
 }
-
-/* Cursor blink animation */
+/* Cursor animation */
 @keyframes blink {
   0%, 50%, 100% { opacity: 1; }
   25%, 75% { opacity: 0; }
