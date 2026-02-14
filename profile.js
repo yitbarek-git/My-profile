@@ -91,14 +91,19 @@ const reveals = document.querySelectorAll(".reveal");
 function revealOnScroll() {
   const windowHeight = window.innerHeight;
 
-  reveals.forEach(el => {
+  reveals.forEach((el) => {
     const elementTop = el.getBoundingClientRect().top;
 
-    if (elementTop < windowHeight - 100) {
+    if (elementTop < windowHeight - 50) {
+      // smaller offset
       el.classList.add("active");
     }
   });
 }
+
+// Run on load and on scroll
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll); // ensures button animates on load
 
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll(); // run on load
