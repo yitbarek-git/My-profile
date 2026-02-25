@@ -31,9 +31,14 @@ window.addEventListener("scroll", () => {
 const span = document.querySelector(".typing-text span");
 const words = [
   "Web Developer",
+  "Web Designer",
+  "Content Creator",
+  "video Editor",
+=======
   "Content Creator",
   "Web Designer",
   "Script Writer",
+
   "Digital Marketer",
 ];
 let wordIndex = 0;
