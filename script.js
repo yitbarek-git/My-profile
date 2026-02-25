@@ -34,6 +34,11 @@ const words = [
   "Web Designer",
   "Content Creator",
   "video Editor",
+=======
+  "Content Creator",
+  "Web Designer",
+  "Script Writer",
+
   "Digital Marketer",
 ];
 let wordIndex = 0;
