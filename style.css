@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 /* Theme variables */
 :root {
   --bg: #000;
@@ -7,6 +8,7 @@
   --nav-bg: #121217;
   --cl-yellow: #f1c40f;
 }
+
 *,
 *::before,
 *::after {
@@ -23,6 +25,7 @@ body.light {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* Base body */
@@ -30,7 +33,8 @@ body {
   width: 100%;
   background: var(--bg);
   color: var(--text);
-  font-family: poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
+  padding-top: 80px;
 }
 
 /* Header */
@@ -43,9 +47,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: hsl(0, 5%, 60%);
+  background-color: var(--nav-bg);
   z-index: 1000;
-  margin-bottom: 8rem;
 }
 
 /* Logo */
@@ -61,16 +64,24 @@ body {
   transform: scale(1.2);
 }
 
-/* Navigation links */
-nav a {
-  font-size: 2.5rem;
-  color: var(--text);
-  margin-left: 4rem;
-  transition: color 0.3s;
+/* Desktop navigation */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 4rem;
 }
 
-nav a:hover,
-nav a:active {
+.navbar a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
   color: var(--primary);
   transform: scale(1.1);
 }
@@ -97,57 +108,64 @@ nav a:active {
   display: none;
 }
 
+/* Mobile navigation */
 @media (max-width: 990px) {
   #menu-btn {
     display: block;
   }
-}
 
-/* Mobile navigation */
-@media (max-width: 995px) {
-  nav {
+  .navbar {
     position: absolute;
     top: 100%;
     right: 0;
     display: none;
-    width: 40%;
-
+    width: 250px;
     background: var(--nav-bg);
-    margin-top: 1rem;
     border-left: 3px solid var(--primary);
     border-bottom: 3px solid var(--primary);
-    border-top: 0.1rem solid var(--primary);
     border-radius: 0.8rem;
     padding: 1rem;
+    margin-top: 1rem;
   }
 
-  nav.active {
+  .navbar.active {
     display: block;
   }
 
-  nav a {
+  .navbar ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navbar li {
+    margin: 1rem 0;
+  }
+
+  .navbar a {
     display: block;
-    margin: 0.5rem 0;
-    font-size: 2rem;
     padding: 1rem;
+    font-size: 2rem;
   }
 
-  nav a:hover,
-  nav a:active {
+  .navbar a:hover,
+  .navbar a.active {
     padding: 1rem;
     border-radius: 0.5rem;
     border-bottom: 0.5rem solid var(--primary);
   }
 }
+
 .reveal {
   opacity: 0;
   transform: translateY(60px);
   transition: all 0.8s ease;
 }
+
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
+
 /* Sections */
 section {
   min-height: 100vh;
@@ -198,6 +216,7 @@ section {
   column-width: 20rem;
   column-gap: 5rem;
 }
+
 @media (max-width: 500px) {
   .profile-section p {
     column-count: 1;
@@ -206,23 +225,26 @@ section {
 
 /* Profile image */
 .profile img {
-  width: 32vw;
+  width: 300px;
+  max-width: 90%;
   border-radius: 70%;
   box-shadow: 0 0 0 1.5px var(--primary);
   transition: transform 0.2s linear;
 }
+
 .htmlvideo {
   width: 300px;
   margin: 3rem;
   border: 1.2px solid var(--primary);
 }
+
 @media (max-width: 900px) {
-  .profile img,
-  .htmlvideo {
+  .profile img {
     width: 70%;
     max-width: 70vw;
     margin-top: 4rem;
   }
+  
   .htmlvideo {
     width: 90%;
   }
@@ -235,6 +257,11 @@ section {
   align-items: center;
   font-size: 3rem;
   margin: 8rem 0 4rem;
+}
+
+.social-icons a {
+  color: var(--text);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-icons a:hover {
@@ -253,6 +280,8 @@ section {
   font-weight: 900;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
+  color: var(--text);
 }
 
 .btn:hover {
@@ -260,6 +289,11 @@ section {
   background: var(--primary);
   color: #000;
   box-shadow: 0 0 3px hsl(0, 43%, 65%);
+}
+
+.btn:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
 }
 
 /* Typing effect */
@@ -276,21 +310,19 @@ section {
 .typing-text span::after {
   content: "";
   position: absolute;
-  right: 0;
+  right: -5px;
   width: 2px;
   height: 100%;
   background: var(--primary);
-  animation: blink 8s infinite;
+  animation: blink 1s infinite;
 }
+
 /* Cursor animation */
 @keyframes blink {
-  0%,
-  50%,
-  100% {
+  0%, 50%, 100% {
     opacity: 1;
   }
-  25%,
-  75% {
+  25%, 75% {
     opacity: 0;
   }
 }
