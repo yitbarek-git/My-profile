@@ -1,113 +1,96 @@
-const menuBtn = document.getElementById("menu-btn");
-const nav = document.querySelector("nav");
+// Mobile Menu
+const menuButton = document.getElementById("menu-btn");
+const navigationMenu = document.querySelector("nav");
 const logo = document.querySelector(".logo");
-const profile = document.querySelector(".profile");
+const profileSection = document.querySelector(".profile");
 
-menuBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  nav.classList.toggle("active");
-  profile.style.marginTop = nav.classList.contains("active")
-    ? nav.scrollHeight + "px"
+menuButton.addEventListener("click", function(event) {
+  event.stopPropagation();
+  navigationMenu.classList.toggle("active");
+  menuButton.classList.toggle("open");
+  profileSection.style.marginTop = navigationMenu.classList.contains("active")
+    ? navigationMenu.scrollHeight + "px"
     : "0";
 });
 
-document.addEventListener("click", (e) => {
-  if (!document.querySelector(".header").contains(e.target)) {
-    nav.classList.remove("active");
-    profile.style.marginTop = "0";
+// Close menu when clicking outside
+document.addEventListener("click", function(event) {
+  const header = document.querySelector(".header");
+  if (!header.contains(event.target)) {
+    navigationMenu.classList.remove("active");
+    menuButton.classList.remove("open");
+    profileSection.style.marginTop = "0";
   }
 });
 
-window.addEventListener("scroll", () => {
+// Close menu on scroll & logo fade
+window.addEventListener("scroll", function() {
   if (window.innerWidth <= 1000) {
-    nav.classList.remove("active");
-    profile.style.marginTop = "0";
+    navigationMenu.classList.remove("active");
+    menuButton.classList.remove("open");
+    profileSection.style.marginTop = "0";
   }
+
   logo.style.opacity = window.scrollY > 100 ? "0" : "1";
   logo.style.pointerEvents = window.scrollY > 100 ? "none" : "auto";
 });
 
-// Typing text logic
-const span = document.querySelector(".typing-text span");
-const words = [
-  "Web Developer",
-  "Web Designer",
-  "Content Creator",
-  "video Editor",
-  "Content Creator",
-  "Web Designer",
-  "Script Writer",
+// Typing Animation
+const typingSpan = document.querySelector(".typing-text span");
+const wordsToType = ["Web Developer", "Web Designer", "Content Creator", "Video Editor", "Digital Marketer"];
+let currentWordIndex = 0, currentCharIndex = 0, isDeleting = false;
 
-  "Digital Marketer",
-];
-let wordIndex = 0;
-let charIndex = 0;
-let deleting = false;
+function typeWriterEffect() {
+  const currentWord = wordsToType[currentWordIndex];
+  typingSpan.textContent = currentWord.substring(0, currentCharIndex);
 
-function type() {
-  const current = words[wordIndex];
-  span.textContent = current.substring(0, charIndex);
-
-  if (!deleting) {
-    charIndex++;
-    if (charIndex > current.length) {
-      deleting = true;
-      setTimeout(type, 2000); // pause at end
+  if (!isDeleting) {
+    currentCharIndex++;
+    if (currentCharIndex > currentWord.length) {
+      isDeleting = true;
+      setTimeout(typeWriterEffect, 2000);
       return;
     }
   } else {
-    charIndex--;
-    if (charIndex === 0) {
-      deleting = false;
-      wordIndex = (wordIndex + 1) % words.length;
+    currentCharIndex--;
+    if (currentCharIndex === 0) {
+      isDeleting = false;
+      currentWordIndex = (currentWordIndex + 1) % wordsToType.length;
     }
   }
-  setTimeout(type, deleting ? 80 : 150);
-}
-type();
 
+  setTimeout(typeWriterEffect, isDeleting ? 80 : 150);
+}
+typeWriterEffect();
+
+// Dark/Light Mode
 const themeToggle = document.getElementById("theme-toggle");
 const body = document.body;
-const header = document.querySelector("header");
 
-header.addEventListener("click", () => {
-  console.log("Header clicked");
-});
-
-// load saved theme
 if (localStorage.getItem("theme") === "light") {
   body.classList.add("light");
   themeToggle.classList.replace("fa-moon", "fa-sun");
 }
 
-themeToggle.addEventListener("click", () => {
+themeToggle.addEventListener("click", function() {
   body.classList.toggle("light");
-
-  const isLight = body.classList.contains("light");
-  themeToggle.classList.toggle("fa-sun", isLight);
-  themeToggle.classList.toggle("fa-moon", !isLight);
-
-  localStorage.setItem("theme", isLight ? "light" : "dark");
+  const isLightMode = body.classList.contains("light");
+  themeToggle.classList.replace(isLightMode ? "fa-moon" : "fa-sun", isLightMode ? "fa-sun" : "fa-moon");
+  localStorage.setItem("theme", isLightMode ? "light" : "dark");
 });
 
-const reveals = document.querySelectorAll(".reveal");
+// Reveal Animations
+const elementsToReveal = document.querySelectorAll(".reveal");
 
-function revealOnScroll() {
+function checkRevealOnScroll() {
   const windowHeight = window.innerHeight;
-
-  reveals.forEach((el) => {
-    const elementTop = el.getBoundingClientRect().top;
-
-    if (elementTop < windowHeight - 50) {
-      // smaller offset
+  elementsToReveal.forEach(el => {
+    if (el.getBoundingClientRect().top < windowHeight - 50) {
       el.classList.add("active");
     }
   });
 }
 
-// Run on load and on scroll
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll); // ensures button animates on load
-
-window.addEventListener("scroll", revealOnScroll);
-revealOnScroll(); // run on load
+window.addEventListener("scroll", checkRevealOnScroll);
+window.addEventListener("load", checkRevealOnScroll);
+checkRevealOnScroll();
