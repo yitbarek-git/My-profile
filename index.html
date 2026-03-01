@@ -3,45 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:type" content="website" />
-    <meta
-      name="description"
-      content="Aplus Academy provides Ethiopian freshman courses, past exam papers, video tutorials, and study guides to help university students succeed."
-    />
-    <meta
-      property="og:title"
-      content="Aplus Academy | Ethiopian Online Learning"
-    />
+    <meta property="og:title" content="Yitbarek | Web Developer" />
     <meta
       property="og:description"
-      content="Empowering Ethiopian freshmen with quality education, tutorials, and exam prep"
+      content="Front-end developer building modern responsive websites."
     />
+    <meta property="og:image" content="profile.png" />
+    <title>Yitbarek | Web Developer</title>
     <meta
-      property="og:image"
-      content="https://yitbarek.github.io/Aplus-Academy/Logo.jpg"
+      name="description"
+      content="Yitbarek - Front-End Web Developer building clean, responsive and high-performance websites. View projects, experience and contact information."
     />
-    <title>
-      Aplus Academy | Ethiopian Freshman Courses, Past Exams & Tutorials
-    </title>
 
-    <!-- CSS Files -->
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel="icon" href="Logo.jpg" type="image/jpg" />
-    <link rel="preload" as="image" href="Logo.jpg" />
+    <link rel="icon" href="profile.png" type="image/png" />
   </head>
 
   <body>
-    <!-- HEADER -->
-
+    <!-- Header -->
     <header class="header">
-      <div class="logo">Aplus Academy</div>
+      <div class="logo">Yitbarek</div>
 
-      <!-- Theme Toggle (Moon/Sun) -->
       <i
         class="fa-solid fa-moon"
         id="theme-toggle"
@@ -50,551 +38,95 @@
         role="button"
       ></i>
 
-      <!-- Navigation Menu -->
       <nav class="navbar">
         <ul>
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#resources">Resources</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#register" class="nav-cta">Join Now</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="https://yitbarek-git.github.io/Bahir-Dar-University/">
+              Education
+            </a>
+          </li>
+          <li><a href="https://github.com/yitbarek-git">Projects</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="#btn">Contact</a></li>
         </ul>
       </nav>
 
-      <!-- Mobile Menu Button (Hamburger) -->
       <div id="menu-btn">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </header>
-    <!-- MAIN CONTENT -->
-    <main>
-      <!-- HOME / HERO SECTION -->
-      <section id="home" class="hero-section reveal">
-        <div class="hero-content reveal">
-          <div class="hero-text">
-            <h1>Welcome to <span class="highlight">Aplus Academy</span></h1>
-            <p class="hero-subtitle">
-              Ethiopia's Premier Online Learning Platform for Freshmen Students
-            </p>
-            <p class="hero-description">
-              Since 2017 E.C, we've helped thousands of Ethiopian students excel
-              in their freshman courses with expert tutorials, past exams, and
-              study resources.
-            </p>
 
-            <!-- Stats / Quick Facts -->
-            <div class="hero-stats reveal">
-              <div class="stat-item">
-                <span class="stat-number">11.4K+</span>
-                <span class="stat-label">Students</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">100+</span>
-                <span class="stat-label">Video Lessons</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">10+</span>
-                <span class="stat-label">Subjects</span>
-              </div>
-            </div>
+    <!-- Profile Section -->
+    <section class="profile reveal">
+      <img
+        src="profile.png"
+        alt="Yitbarek profile photo"
+        class="profile-image"
+        loading="lazy"
+      />
 
-            <!-- CTA Buttons -->
-            <div class="hero-buttons">
-              <a href="#courses" class="btn btn-primary">Explore Courses</a>
-              <a href="#register" class="btn btn-outline">Join Academy</a>
-            </div>
-          </div>
+      <div class="profile-section reveal">
+        <h1>Hi, I’m Yitbarek</h1>
 
-          <div class="hero-image reveal">
-            <img
-              src="Logo.jpg"
-              alt="Aplus Academy Logo"
-              loading="lazy"
-              class="hero-logo"
-            />
-            <div class="social-handle">@aplusacademy1</div>
-          </div>
-        </div>
-      </section>
+        <h3 class="typing-text">I am a <span></span></h3>
 
-      <!-- COURSES SECTION - Card Based -->
-      <section id="courses" class="courses-section reveal">
-        <div class="section-header">
-          <h2>Our <span class="highlight">Courses</span></h2>
-          <p class="section-subtitle">
-            Comprehensive freshman courses designed for Ethiopian university
-            curriculum
-          </p>
-        </div>
+        <p>
+          I’m Yitbarek, a passionate web developer focused on building clean,
+          responsive, and high-performance websites. I specialize in front-end
+          development and modern web design, with a strong emphasis on creating
+          visually appealing, user-friendly, and accessible digital experiences.
+        </p>
 
-        <div class="courses-grid reveal">
-          <!-- Course Card 1 -->
-          <div class="course-card">
-            <div class="course-icon">
-              <i class="fa-solid fa-calculator"></i>
-            </div>
-            <h3>Discrete & Applied Mathematics</h3>
-            <p class="credit-hours">5 Credit Hours</p>
-            <p class="course-description">
-              Master mathematical concepts with step-by-step tutorials and
-              practice problems.
-            </p>
-            <div class="course-meta">
-              <span><i class="fa-regular fa-clock"></i> 10+ videos</span>
-              <span><i class="fa-regular fa-file-pdf"></i> Worksheets</span>
-            </div>
-            <a href="#" class="course-link"
-              >View Course <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </div>
+        <video class="htmlvideo reveal" controls muted poster="profile.png">
+          <source src="demo-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-          <!-- Course Card 2 -->
-          <div class="course-card">
-            <div class="course-icon">
-              <i class="fa-solid fa-language"></i>
-            </div>
-            <h3>Communicative English</h3>
-            <p class="credit-hours">4 Credit Hours</p>
-            <p class="course-description">
-              Improve your English communication skills for academic and
-              professional success.
-            </p>
-            <div class="course-meta">
-              <span><i class="fa-regular fa-clock"></i> 8+ videos</span>
-              <span><i class="fa-regular fa-file-pdf"></i> Exercises</span>
-            </div>
-            <a href="#" class="course-link"
-              >View Course <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </div>
-
-          <!-- Course Card 3 -->
-          <div class="course-card">
-            <div class="course-icon">
-              <i class="fa-solid fa-code"></i>
-            </div>
-            <h3>Computer Programming</h3>
-            <p class="credit-hours">7 Credit Hours</p>
-            <p class="course-description">
-              Learn programming fundamentals with practical examples and coding
-              exercises.
-            </p>
-            <div class="course-meta">
-              <span><i class="fa-regular fa-clock"></i> 12+ videos</span>
-              <span><i class="fa-regular fa-file-code"></i> Code samples</span>
-            </div>
-            <a href="#" class="course-link"
-              >View Course <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </div>
-
-          <!-- Course Card 4 -->
-          <div class="course-card">
-            <div class="course-icon">
-              <i class="fa-solid fa-brain"></i>
-            </div>
-            <h3>Logic & Philosophy</h3>
-            <p class="credit-hours">4 Credit Hours</p>
-            <p class="course-description">
-              Develop critical thinking skills through logical reasoning and
-              philosophical concepts.
-            </p>
-            <div class="course-meta">
-              <span><i class="fa-regular fa-clock"></i> 15+ videos</span>
-              <span><i class="fa-regular fa-file-pdf"></i> Notes</span>
-            </div>
-            <a href="#" class="course-link"
-              >View Course <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </div>
-
-          <!-- Course Card 5 -->
-          <div class="course-card">
-            <div class="course-icon">
-              <i class="fa-solid fa-globe"></i>
-            </div>
-            <h3>History & Geography</h3>
-            <p class="credit-hours">3 Credit Hours</p>
-            <p class="course-description">
-              Explore Ethiopian history, anthropology, and geographical
-              concepts.
-            </p>
-            <div class="course-meta">
-              <span><i class="fa-regular fa-clock"></i> 15+ videos</span>
-              <span><i class="fa-regular fa-map"></i> Maps</span>
-            </div>
-            <a href="#" class="course-link"
-              >View Course <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </div>
-
-          <!-- Course Card 6 -->
-          <div class="course-card">
-            <div class="course-icon">
-              <i class="fa-solid fa-chart-line"></i>
-            </div>
-            <h3>Economics & Entrepreneurship</h3>
-            <p class="credit-hours">4 Credit Hours</p>
-            <p class="course-description">
-              Understand economic principles and develop entrepreneurial
-              mindset.
-            </p>
-            <div class="course-meta">
-              <span><i class="fa-regular fa-clock"></i> 10+ videos</span>
-              <span><i class="fa-regular fa-file-pdf"></i> Case studies</span>
-            </div>
-            <a href="#" class="course-link"
-              >View Course <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </div>
-        </div>
-      </section>
-
-      <!-- RESOURCES SECTION -->
-      <section id="resources" class="resources-section reveal">
-        <div class="section-header reveal">
-          <h2>Student <span class="highlight">Resources</span></h2>
-          <p class="section-subtitle">
-            Everything you need to succeed in your freshman year
-          </p>
-        </div>
-
-        <div class="resources-grid">
-          <div class="resource-card">
-            <i class="fa-solid fa-file-pdf"></i>
-            <h3>Past Exams</h3>
-            <p>Real midterm and final exams from previous years</p>
-            <a
-              href="https://t.me/aplusacademy11"
-              class="resource-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Download <i class="fa-solid fa-download"></i
-            ></a>
-          </div>
-
-          <div class="resource-card">
-            <i class="fa-solid fa-video"></i>
-            <h3>Video Tutorials</h3>
-            <p>Step-by-step explanations of difficult concepts</p>
-            <a
-              href="https://www.youtube.com/@aplusacademy1"
-              class="resource-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Watch <i class="fa-solid fa-play"></i
-            ></a>
-          </div>
-
-          <div class="resource-card">
-            <i class="fa-solid fa-book"></i>
-            <h3>Study Guides and tips</h3>
-            <p>Comprehensive notes and summaries for each subject</p>
-            <a
-              href="https://youtube.com/playlist?list=PLw0Js0Bn4IfMDHY6qtVNs17WYCBOGrHNe&si=e8JtS8nincWuOdPE"
-              class="resource-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Access <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </div>
-
-          <div class="resource-card">
-            <i class="fa-solid fa-lightbulb"></i>
-            <h3>Department info</h3>
-            <p>Learn more about the departments and their offerings</p>
-            <a href="#" class="resource-link"
-              >Learn More <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </div>
-        </div>
-
-        <!-- sample videos -->
-        <div class="video-showcase reveal">
-          <h3>Featured Video Lessons</h3>
-          <div class="video-gallery">
-            <div class="video-card">
-              <video controls poster="cover2.png">
-                <source src="./video.mp4" type="video/mp4" />
-              </video>
-              <p>Welcome to Aplus Academy</p>
-            </div>
-            <div class="video-card">
-              <video controls poster="A+ cover.png">
-                <source src="./day 3 video.mp4" type="video/mp4" />
-              </video>
-              <p>Day 3: 8k subscribers celebration</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ABOUT SECTION -->
-      <section id="about" class="about-section reveal">
-        <div class="section-header">
-          <h2>About <span class="highlight">Aplus Academy</span></h2>
-          <p class="section-subtitle">
-            Empowering Ethiopian freshmen since 2017 E.C
-          </p>
-        </div>
-
-        <div class="about-content">
-          <div class="about-text">
-            <div class="founder-card">
-              <h3>
-                <i class="fa-solid fa-user-graduate"></i> From the Founder
-              </h3>
-              <p>
-                <strong
-                  >"My name is Yitbarek, the owner of this channel. I created it
-                  to support my juniors."</strong
-                >
-              </p>
-            </div>
-
-            <div class="mission-card">
-              <h3><i class="fa-solid fa-bullseye"></i> Our Mission</h3>
-              <p>
-                Welcome to Aplus Academy – your go-to destination for top-notch
-                academic support tailored specifically for Ethiopian freshmen!
-                At Aplus Academy, we empower Ethiopian freshmen to excel
-                academically and build strong foundations for their future. Our
-                expert-led tutorials simplify complex subjects, from English and
-                Mathematics to Science and Technology, making learning engaging
-                and effective.
-              </p>
-              <p>
-                Whether you're preparing for exams, strengthening your skills,
-                or exploring new knowledge, Aplus Academy provides clear
-                guidance, practical examples, and a supportive community. Join
-                thousands of students who are transforming their academic
-                journey and achieving success with us.
-              </p>
-            </div>
-
-            <div class="stats-mini reveal">
-              <div class="stat-mini-item">
-                <span class="stat-mini-number">2017</span>
-                <span class="stat-mini-label">Established</span>
-              </div>
-              <div class="stat-mini-item">
-                <span class="stat-mini-number">8k+</span>
-                <span class="stat-mini-label">Subscribers</span>
-              </div>
-              <div class="stat-mini-item">
-                <span class="stat-mini-number">50+</span>
-                <span class="stat-mini-label">Videos</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="about-image">
-            <img
-              src="Logo.jpg"
-              alt="Yitbarek - Founder of Aplus Academy"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- REGISTRATION / CONTACT SECTION -->
-      <section id="register" class="registration-section reveal">
-        <div class="section-header">
-          <h2>Join <span class="highlight">Aplus Academy</span></h2>
-          <p class="section-subtitle">
-            Complete the form below to enroll in our paid Academy program
-          </p>
-        </div>
-
-        <div class="form-container">
-          <form id="registration-form">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Full Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Enter your full name"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="example@gmail.com"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  placeholder="Create a password"
-                  minlength="4"
-                  required
-                />
-                <small>Minimum 4 characters</small>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label>Gender</label>
-                <div class="radio-group">
-                  <label
-                    ><input type="radio" name="gender" value="male" required />
-                    Male</label
-                  >
-                  <label
-                    ><input
-                      type="radio"
-                      name="gender"
-                      value="female"
-                      required
-                    />
-                    Female</label
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message (Optional)</label>
-              <textarea
-                id="message"
-                rows="3"
-                placeholder="Tell us about your learning goals..."
-              ></textarea>
-            </div>
-
-            <div class="button-group">
-              <button type="submit" class="btn btn-primary">
-                Join Academy
-              </button>
-              <button type="reset" class="btn btn-outline">Clear Form</button>
-            </div>
-          </form>
-        </div>
-      </section>
-
-      <!-- CONTACT / SOCIAL SECTION -->
-      <section id="contact" class="contact-section reveal">
-        <div class="section-header">
-          <h2>Connect With <span class="highlight">Us</span></h2>
-          <p class="section-subtitle">
-            Follow us on social media for updates and free resources
-          </p>
-        </div>
-
-        <div class="social-grid">
+        <!-- Social Links -->
+        <div class="social-icons reveal">
           <a
-            href="http://www.youtube.com/@aplusacademy1"
+            href="https://github.com/yitbarek-git"
             target="_blank"
             rel="noopener noreferrer"
-            class="social-card youtube"
+            aria-label="GitHub profile"
           >
-            <i class="fab fa-youtube"></i>
-            <span>YouTube</span>
-            <small>@aplusacademy1</small>
+            <i class="fa-brands fa-github"></i>
           </a>
 
           <a
-            href="https://t.me/aplusacademy11"
+            href="https://www.youtube.com/@aplusacademy1"
             target="_blank"
             rel="noopener noreferrer"
-            class="social-card telegram"
+            aria-label="YouTube channel"
           >
-            <i class="fab fa-telegram-plane"></i>
-            <span>Telegram</span>
-            <small>@aplusacademy11</small>
+            <i class="fa-brands fa-youtube"></i>
           </a>
 
+          <a
+            href="https://www.upwork.com/freelancers/~01752de3e099833b95?mp_source=share"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Upwork profile"
+          >
+            <i class="fa-brands fa-upwork"></i>
+          </a>
           <a
             href="https://www.tiktok.com/@aplusacademy11"
             target="_blank"
             rel="noopener noreferrer"
-            class="social-card tiktok"
+            aria-label="TikTok profile"
           >
-            <i class="fab fa-tiktok"></i>
-            <span>TikTok</span>
-            <small>@aplusacademy11</small>
-          </a>
-
-          <a
-            href="https://www.instagram.com/aplusacademy1/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-card instagram"
-          >
-            <i class="fab fa-instagram"></i>
-            <span>Instagram</span>
-            <small>@aplusacademy1</small>
+            <i class="fa-brands fa-tiktok"></i>
           </a>
         </div>
-
-        <!-- Quick Contact -->
-        <div class="quick-contact reveal">
-          <h3>Need Help?</h3>
-          <div class="contact-links">
-            <a href="https://t.me/Yitbarek_2" class="contact-link">
-              <i class="fab fa-telegram"></i> Message on Telegram
-            </a>
-            <a href="mailto:ykifleyohans@gmail.com" class="contact-link">
-              <i class="fa-regular fa-envelope"></i> Give Feedback
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer-content reveal">
-        <div class="footer-logo">
-          <h3>Aplus Academy</h3>
-          <p>Empowering Ethiopian students for academic excellence</p>
-        </div>
-        <div class="footer-links">
-          <a href="#home">Home</a>
-          <a href="#courses">Courses</a>
-          <a href="#resources">Resources</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="footer-copyright">
-          <p>&copy; 2025 Aplus Academy | All Rights Reserved</p>
-        </div>
+        <a href="mailto:ykifleyohans@gmail.com" class="reveal btn" id="btn">
+          @Email Me
+        </a>
       </div>
-    </footer>
-
-    <!-- JavaScript -->
+    </section>
     <script src="script.js" defer></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "EducationalOrganization",
-        "name": "Aplus Academy",
-        "url": "https://yourusername.github.io/repo/",
-        "description": "Ethiopian online learning platform for freshman university students",
-        "sameAs": [
-          "https://www.youtube.com/@aplusacademy1",
-          "https://t.me/aplusacademy11"
-        ]
-      }
-    </script>
   </body>
 </html>
