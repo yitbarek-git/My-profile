@@ -1,69 +1,67 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Yitbarek | Web Developer" />
-    <meta
-      property="og:description"
-      content="Front-end developer building modern responsive websites."
-    />
-    <meta property="og:image" content="profile.webp" />
-    <title>Yitbarek | Web Developer</title>
-    <meta
-      name="description"
-      content="Yitbarek - Front-End Web Developer building clean, responsive and high-performance websites. View projects, experience and contact information."
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <!-- SEO -->
+  <title>Yitbarek | Web Developer</title>
+  <meta name="description" content="Yitbarek - Front-End Web Developer building clean, responsive and high-performance websites." />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link rel="icon" href="profile.webp" type="image/webp" />
-  </head>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Yitbarek | Web Developer" />
+  <meta property="og:description" content="Front-end developer building modern responsive websites." />
+  <meta property="og:image" content="profile.webp" />
 
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="logo">Yitbarek</div>
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-      <i
-        class="fa-solid fa-moon"
-        id="theme-toggle"
-        title="Toggle dark mode"
-        aria-label="Toggle dark mode"
-        role="button"
-      ></i>
+  <!-- Favicon -->
+  <link rel="icon" href="profile.webp" type="image/webp" />
+</head>
 
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="https://yitbarek-git.github.io/Bahir-Dar-University/">
-              Education
-            </a>
-          </li>
-          <li><a href="https://github.com/yitbarek-git">Projects</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="#btn">Contact</a></li>
-        </ul>
-      </nav>
+<body>
 
-      <div id="menu-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </header>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Yitbarek</div>
+
+    <!-- FIX: use button instead of <i> -->
+    <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="https://yitbarek-git.github.io/Bahir-Dar-University/" target="_blank" rel="noopener noreferrer">
+            Education
+          </a>
+        </li>
+        <li><a href="https://github.com/yitbarek-git" target="_blank" rel="noopener noreferrer">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="#btn">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="menu-btn" aria-label="Menu" role="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
 
     <!-- Profile Section -->
     <section class="profile reveal">
       <img
         src="profile.webp"
-        alt="Yitbarek profile photo"
+        alt="Portrait of Yitbarek"
         class="profile-image"
         loading="lazy"
       />
@@ -76,57 +74,44 @@
         <p>
           I’m Yitbarek, a passionate web developer focused on building clean,
           responsive, and high-performance websites. I specialize in front-end
-          development and modern web design, with a strong emphasis on creating
-          visually appealing, user-friendly, and accessible digital experiences.
+          development and modern web design, creating visually appealing,
+          user-friendly, and accessible digital experiences.
         </p>
 
-        <video class="htmlvideo reveal" controls muted>
+        <!-- Video -->
+        <video class="htmlvideo reveal" controls muted preload="metadata">
           <source src="demo-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
         <!-- Social Links -->
         <div class="social-icons reveal">
-          <a
-            href="https://github.com/yitbarek-git"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub profile"
-          >
+          <a href="https://github.com/yitbarek-git" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <i class="fa-brands fa-github"></i>
           </a>
 
-          <a
-            href="https://www.youtube.com/@aplusacademy1"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="YouTube channel"
-          >
+          <a href="https://www.youtube.com/@aplusacademy1" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
             <i class="fa-brands fa-youtube"></i>
           </a>
 
-          <a
-            href="https://www.upwork.com/freelancers/~01752de3e099833b95?mp_source=share"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Upwork profile"
-          >
+          <a href="https://www.upwork.com/freelancers/~01752de3e099833b95" target="_blank" rel="noopener noreferrer" aria-label="Upwork">
             <i class="fa-brands fa-upwork"></i>
           </a>
-          <a
-            href="https://www.tiktok.com/@aplusacademy11"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="TikTok profile"
-          >
+
+          <a href="https://www.tiktok.com/@aplusacademy11" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
             <i class="fa-brands fa-tiktok"></i>
           </a>
         </div>
-        <a href="mailto:ykifleyohans@gmail.com" class="reveal btn" id="btn">
-          @Email Me
+
+        <!-- Contact -->
+        <a href="mailto:ykifleyohans@gmail.com" class="btn reveal" id="btn">
+          Email Me
         </a>
       </div>
     </section>
-    <script src="script.js" defer></script>
-  </body>
+
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
 </html>
