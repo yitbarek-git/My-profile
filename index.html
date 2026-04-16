@@ -1,117 +1,206 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
-  <title>Yitbarek | Web Developer</title>
-  <meta name="description" content="Yitbarek - Front-End Web Developer building clean, responsive and high-performance websites." />
+    <!-- SEO -->
+    <title>Yitbarek | Front-End Web Developer</title>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Yitbarek | Web Developer" />
-  <meta property="og:description" content="Front-end developer building modern responsive websites." />
-  <meta property="og:image" content="profile.webp" />
+    <meta
+      name="description"
+      content="Yitbarek - Front-End Web Developer building clean, responsive and high-performance websites."
+    />
+    <meta
+      name="keywords"
+      content="Yitbarek, web developer, front-end developer, HTML CSS JavaScript, Ethiopia developer"
+    />
+    <meta name="author" content="Yitbarek" />
+    <meta name="robots" content="index, follow" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="canonical" href="https://yitbarek-git.github.io/" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="profile.webp" type="image/webp" />
-</head>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yitbarek-git.github.io/" />
+    <meta property="og:title" content="Yitbarek | Web Developer" />
+    <meta
+      property="og:description"
+      content="Front-end developer building modern responsive websites."
+    />
+    <meta
+      property="og:image"
+      content="https://yitbarek-git.github.io/profile.webp"
+    />
 
-<body>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Yitbarek | Web Developer" />
+    <meta
+      name="twitter:description"
+      content="Front-end developer building modern responsive websites."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yitbarek-git.github.io/profile.webp"
+    />
 
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">Yitbarek</div>
+    <meta name="theme-color" content="#0f172a" />
 
-    <!-- FIX: use button instead of <i> -->
-    <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-      <i class="fa-solid fa-moon"></i>
-    </button>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>
-          <a href="https://yitbarek-git.github.io/Bahir-Dar-University/" target="_blank" rel="noopener noreferrer">
-            Education
-          </a>
-        </li>
-        <li><a href="https://github.com/yitbarek-git" target="_blank" rel="noopener noreferrer">Projects</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="#btn">Contact</a></li>
-      </ul>
-    </nav>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-    <div id="menu-btn" aria-label="Menu" role="button">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </header>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
 
-  <!-- Main Content -->
-  <main>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Yitbarek",
+        "url": "https://yitbarek-git.github.io/",
+        "sameAs": [
+          "https://github.com/yitbarek-git",
+          "https://www.youtube.com/@aplusacademy1",
+          "https://www.upwork.com/freelancers/~01752de3e099833b95"
+        ],
+        "jobTitle": "Front-End Web Developer"
+      }
+    </script>
+  </head>
 
-    <!-- Profile Section -->
-    <section class="profile reveal">
-      <img
-        src="profile.webp"
-        alt="Portrait of Yitbarek"
-        class="profile-image"
-        loading="lazy"
-      />
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">Yitbarek</div>
 
-      <div class="profile-section reveal">
-        <h1>Hi, I’m Yitbarek</h1>
+      <!-- Theme toggle -->
+      <div
+        id="theme-toggle"
+        aria-label="Toggle dark mode"
+        title="Toggle dark mode"
+        role="button"
+        tabindex="0"
+      >
+        <i class="fa-solid fa-moon"></i>
+      </div>
 
-        <h3 class="typing-text">I am a <span></span></h3>
+      <!-- Navigation -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a
+              href="https://yitbarek-git.github.io/Bahir-Dar-University/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Education
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/yitbarek-git"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Projects</a
+            >
+          </li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="#btn">Contact</a></li>
+        </ul>
+      </nav>
 
-        <p>
-          I’m Yitbarek, a passionate web developer focused on building clean,
-          responsive, and high-performance websites. I specialize in front-end
-          development and modern web design, creating visually appealing,
-          user-friendly, and accessible digital experiences.
-        </p>
+      <!-- Mobile menu -->
+      <div id="menu-btn" aria-label="Menu" role="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
 
-        <!-- Video -->
-        <video class="htmlvideo reveal" controls muted preload="metadata">
-          <source src="demo-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+    <main>
+      <!-- Profile section -->
+      <section class="profile reveal">
+        <img
+          src="profile.webp"
+          alt="Portrait of Yitbarek"
+          class="profile-image"
+          loading="lazy"
+        />
 
-        <!-- Social Links -->
-        <div class="social-icons reveal">
-          <a href="https://github.com/yitbarek-git" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-          </a>
+        <div class="profile-section reveal">
+          <h2>Hi, I’m Yitbarek — Front-End Web Developer</h2>
 
-          <a href="https://www.youtube.com/@aplusacademy1" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
+          <h3 class="typing-text">I can help you as <span></span></h3>
 
-          <a href="https://www.upwork.com/freelancers/~01752de3e099833b95" target="_blank" rel="noopener noreferrer" aria-label="Upwork">
-            <i class="fa-brands fa-upwork"></i>
-          </a>
+          <p>
+            I’m Yitbarek, a passionate web developer focused on building clean,
+            responsive, and high-performance websites. I specialize in front-end
+            development and modern web design.
+          </p>
 
-          <a href="https://www.tiktok.com/@aplusacademy11" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-            <i class="fa-brands fa-tiktok"></i>
+          <!-- Demo video -->
+          <video class="htmlvideo reveal" controls muted preload="metadata">
+            <source src="demo-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <!-- Social links -->
+          <div class="social-icons reveal">
+            <a
+              href="https://github.com/yitbarek-git"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+              href="https://www.youtube.com/@aplusacademy1"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a
+              href="https://www.upwork.com/freelancers/~01752de3e099833b95"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Upwork"
+            >
+              <i class="fa-brands fa-upwork"></i>
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@aplusacademy11"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+
+          <!-- Contact button -->
+          <a href="mailto:ykifleyohans@gmail.com" class="btn reveal" id="btn">
+            Email Me
           </a>
         </div>
+      </section>
+    </main>
 
-        <!-- Contact -->
-        <a href="mailto:ykifleyohans@gmail.com" class="btn reveal" id="btn">
-          Email Me
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <script src="script.js" defer></script>
-</body>
+    <script src="script.js" defer></script>
+  </body>
 </html>
