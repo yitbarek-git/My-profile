@@ -3,7 +3,7 @@
 This is my personal developer portfolio website built with **HTML, CSS, and JavaScript**.  
 It showcases my skills, projects, experience, and online presence as a front-end web developer.
 
-Live Site: https://yitbarek-git.github.io/
+Live Site: [https://yitbarek-git.github.io/](https://yitbarek-git.github.io/My-profile/)
 
 ---
 
