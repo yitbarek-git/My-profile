@@ -57,8 +57,6 @@ This portfolio is not just a website — it represents:
 - 🌍 Website: https://yitbarek-git.github.io/
 - 💻 GitHub: https://github.com/yitbarek-git
 - 📺 YouTube: https://www.youtube.com/@aplusacademy1
-- 💼 Upwork: https://www.upwork.com/freelancers/~01752de3e099833b95
-
 ---
 
 ## 🎯 Purpose
