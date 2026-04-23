@@ -54,7 +54,7 @@ This portfolio is not just a website — it represents:
 
 ## 🔗 Live Links
 
-- 🌍 Website: https://yitbarek-git.github.io/
+- 🌍 Website: [https://yitbarek-git.github.io/](https://myprofile-yitbarek.netlify.app/)
 - 💻 GitHub: https://github.com/yitbarek-git
 - 📺 YouTube: https://www.youtube.com/@aplusacademy1
 ---
