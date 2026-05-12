@@ -5,61 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO -->
-    <title>Yitbarek | Front-End Web Developer</title>
-
-    <meta
-      name="description"
-      content="Yitbarek - Front-End Web Developer building clean, responsive and high-performance websites."
-    />
-    <meta
-      name="keywords"
-      content="Yitbarek, web developer, front-end developer, HTML CSS JavaScript, Ethiopia developer"
-    />
+    <title>Yitbarek | Web Developer</title>
+    <meta name="description" content="Yitbarek — Front-End Web Developer building clean, responsive and high-performance websites." />
+    <meta name="keywords" content="Yitbarek, web developer, front-end developer, HTML CSS JavaScript, Ethiopia developer" />
     <meta name="author" content="Yitbarek" />
     <meta name="robots" content="index, follow" />
-
     <link rel="canonical" href="https://yitbarek-git.github.io/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://yitbarek-git.github.io/" />
     <meta property="og:title" content="Yitbarek | Web Developer" />
-    <meta
-      property="og:description"
-      content="Front-end developer building modern responsive websites."
-    />
-    <meta
-      property="og:image"
-      content="https://yitbarek-git.github.io/profile.webp"
-    />
-
+    <meta property="og:description" content="Front-end developer building modern responsive websites." />
+    <meta property="og:image" content="https://yitbarek-git.github.io/profile.webp" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Yitbarek | Web Developer" />
-    <meta
-      name="twitter:description"
-      content="Front-end developer building modern responsive websites."
-    />
-    <meta
-      name="twitter:image"
-      content="https://yitbarek-git.github.io/profile.webp"
-    />
+    <meta name="twitter:description" content="Front-end developer building modern responsive websites." />
+    <meta name="twitter:image" content="https://yitbarek-git.github.io/profile.webp" />
+    <meta name="theme-color" content="#0a0a0f" />
 
-    <meta name="theme-color" content="#0f172a" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- Icons -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
 
     <script type="application/ld+json">
       {
@@ -78,119 +55,212 @@
   </head>
 
   <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="logo">Yitbarek</div>
 
-      <!-- Theme toggle -->
-      <div
-        id="theme-toggle"
-        aria-label="Toggle dark mode"
-        title="Toggle dark mode"
-        role="button"
-        tabindex="0"
-      >
-        <i class="fa-solid fa-moon"></i>
-      </div>
+    <!-- ░░ NOISE TEXTURE OVERLAY ░░ -->
+    <div class="noise" aria-hidden="true"></div>
 
-      <!-- Navigation -->
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
+    <!-- ░░ AMBIENT GLOW ORBS ░░ -->
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+
+    <!-- HEADER-->
+    <header class="header" role="banner">
+      <a href="index.html" class="logo" aria-label="Yitbarek — Home">
+        <span class="logo-mark">Y</span>
+        <span class="logo-text">itbarek</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="navbar" aria-label="Primary navigation">
+        <ul role="list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
           <li>
-            <a
-              href="https://yitbarek-git.github.io/Bahir-Dar-University/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://www.bdu.edu.et/" target="_blank" rel="noopener noreferrer" class="nav-link">
               Education
             </a>
           </li>
           <li>
-            <a
-              href="https://github.com/yitbarek-git"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Projects</a
-            >
+            <a href="https://github.com/yitbarek-git" rel="noopener noreferrer" class="nav-link">
+              Projects
+            </a>
           </li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="#btn">Contact</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li>
+            <a href="mailto:ykifleyohans@gmail.com" class="nav-cta" aria-label="Contact Yitbarek by email">
+              Contact
+            </a>
+          </li>
         </ul>
       </nav>
 
-      <!-- Mobile menu -->
-      <div id="menu-btn" aria-label="Menu" role="button">
-        <span></span>
-        <span></span>
-        <span></span>
+      <!-- Header Right Controls -->
+      <div class="header-controls">
+        <button
+          id="theme-toggle"
+          aria-label="Toggle light mode"
+          title="Toggle theme"
+          type="button"
+        >
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+
+        <button
+          id="menu-btn"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          type="button"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
       </div>
     </header>
 
-    <main>
-      <!-- Profile section -->
-      <section class="profile reveal">
-        <img
-          src="profile.webp"
-          alt="Portrait of Yitbarek"
-          class="profile-image"
-          loading="lazy"
-        />
+    <!-- Mobile Drawer Nav -->
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+      <ul role="list">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li>
+          <a href="https://www.bdu.edu.et/" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">
+            Education
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/yitbarek-git" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">
+            Projects
+          </a>
+        </li>
+        <li><a href="experience.html" class="mobile-nav-link">Experience</a></li>
+        <li>
+          <a href="mailto:ykifleyohans@gmail.com" class="mobile-nav-link mobile-nav-cta">
+            Get in Touch
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
 
-        <div class="profile-section reveal">
-          <h2>Hi, I’m Yitbarek — Front-End Web Developer</h2>
+    <!-- 
+         MAIN CONTENT
+  -->
+    <main id="main-content">
 
-          <h3 class="typing-text">I can help you as <span></span></h3>
+      <!-- ─── HERO ─── -->
+      <section class="hero" aria-label="Introduction">
 
-          <p>
-            I’m Yitbarek, a passionate web developer focused on building clean,
-            responsive, and high-performance websites. I specialize in front-end
-            development and modern web design.
+        <!-- Profile Image Card -->
+        <div class="hero-visual reveal-left">
+          <div class="profile-card">
+            <img
+              src="profile.webp"
+              alt="Portrait of Yitbarek, front-end web developer"
+              class="profile-img"
+              loading="eager"
+              width="340"
+              height="400"
+            />
+            <!-- Floating availability badge -->
+            <div class="availability-badge" aria-label="Currently available for work">
+              <span class="badge-dot" aria-hidden="true"></span>
+              Available
+            </div>
+          </div>
+
+          <!-- Demo video tucked below card -->
+          <div class="video-wrapper reveal">
+            <video
+              class="demo-video"
+              controls
+              muted
+              preload="metadata"
+              aria-label="Portfolio demo video"
+            >
+              <source src="demo-video.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+            <p class="video-label">
+              <a href="https://www.youtube.com/@aplusacademy1x">  <i class="fa-solid fa-play" aria-hidden="true"></i>
+                Watch on youtube.</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Hero Copy -->
+        <div class="hero-copy reveal-right">
+
+          <p class="hero-eyebrow">Hello, I'm</p>
+
+          <h1 class="hero-name">Yitbarek</h1>
+
+          <h2 class="hero-tagline">
+            <span class="tagline-static">I craft as a</span>
+            <span class="typing-wrapper" aria-live="polite">
+              <span class="typing-text" id="typing-text"></span>
+              <span class="cursor" aria-hidden="true"></span>
+            </span>
+          </h2>
+
+          <p class="hero-bio">
+            building clean, responsive, and high-performance websites.
+            specialised in web development and modern web design — turning ideas into polished digital experiences.
           </p>
 
-          <!-- Demo video -->
-          <video class="htmlvideo reveal" controls muted preload="metadata">
-            <source src="demo-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <!-- Skill Tags -->
+          <ul class="skill-tags" role="list" aria-label="Core skills">
+            <li class="tag">HTML&nbsp;/&nbsp;CSS / React</li>
+            <li class="tag">JavaScript &nbsp;/&nbsp; TypeScript</li>
+            <li class="tag">Responsive Design</li>
+            <li class="tag">UI&nbsp;/&nbsp;UX</li>
+            <li class="tag">Figma</li>
+            <li class="tag">Python&nbsp;/&nbsp;AI &nbsp;/&nbsp; Automation</li>
+            <li class="tag">Git&nbsp;/&nbsp;Github&nbsp;/&nbsp;Deployment</li>
+          </ul>
 
-          <!-- Social links -->
-          <div class="social-icons reveal">
-            <a
-              href="https://github.com/yitbarek-git"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-            >
-              <i class="fa-brands fa-github"></i>
+          <!-- CTA Row -->
+          <div class="hero-cta">
+            <a href="mailto:ykifleyohans@gmail.com" class="btn btn-primary" id="contact-btn">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              Email Me
             </a>
-
-            <a
-              href="https://www.youtube.com/@aplusacademy1"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="YouTube"
-            >
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-
-            <a
-              href="https://www.tiktok.com/@aplusacademy11"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="TikTok"
-            >
-              <i class="fa-brands fa-tiktok"></i>
+            <a href="https://github.com/yitbarek-git" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              View Projects
             </a>
           </div>
 
-          <!-- Contact button -->
-          <a href="mailto:ykifleyohans@gmail.com" class="btn reveal" id="btn">
-            Email Me
-          </a>
+          <!-- Social Icons -->
+          <div class="social-row" aria-label="Social media links">
+            <a href="https://github.com/yitbarek-git" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="social-link">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.youtube.com/@aplusacademy1" target="_blank" rel="noopener noreferrer" aria-label="YouTube channel" class="social-link">
+              <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.tiktok.com/@aplusacademy11" target="_blank" rel="noopener noreferrer" aria-label="TikTok profile" class="social-link">
+              <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+            </a>
+          </div>
+
         </div>
       </section>
+
     </main>
+
+    <!--FOOTER -->
+    <footer class="footer" role="contentinfo">
+      <p class="footer-copy">
+        &copy; <span id="year"></span> Yitbarek. Crafted with care.
+      </p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links" role="list">
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="https://github.com/yitbarek-git" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="mailto:ykifleyohans@gmail.com">Email</a></li>
+        </ul>
+      </nav>
+    </footer>
 
     <script src="script.js" defer></script>
   </body>
