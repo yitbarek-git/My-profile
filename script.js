@@ -1,5 +1,4 @@
 
-
 (() => {
   "use strict";
   const menuBtn      = document.getElementById("menu-btn");
