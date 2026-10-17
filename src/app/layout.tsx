@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { SoundProvider } from "@/components/providers/sound-provider";
@@ -73,9 +74,6 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body>
-        <link rel="preload" as="image" href="/me.webp" />
-        <link rel="preload" as="image" href="/image.webp" />
-
         <ThemeProvider
           attribute="data-theme"
           defaultTheme="dark"
