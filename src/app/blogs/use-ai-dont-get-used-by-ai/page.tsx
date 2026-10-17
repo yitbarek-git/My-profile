@@ -50,7 +50,7 @@ export default function BlogPostPage() {
 
           <div className="mt-4 flex items-center gap-2 text-sm">
             <Image
-              src="/me.jpg"
+              src="/me.webp"
               alt="Yitbarek K"
               width={24}
               height={24}

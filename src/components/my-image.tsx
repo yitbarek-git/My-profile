@@ -36,8 +36,8 @@ export default function MyImage() {
           alt: "My cosplay image in dark theme",
         }
       : {
-          src: "me.jpg",
-          url: "me.jpg",
+          src: "me.webp",
+          url: "me.webp",
           alt: "My real image in light theme",
         };
   const color1 = resolvedTheme === "dark" ? "#123223" : "#0e0e0e";

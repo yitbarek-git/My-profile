@@ -8,7 +8,7 @@ export default function GearPage() {
       name: "Personal Laptop",
       description:
         "My daily driver for coding, building web applications, studying programming, and working on personal projects.",
-      src: "pc.jpg",
+      src: "pc.webp",
       loading: "eager" as const,
     },
     {

@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Yitbarek.K",
     images: [
       {
-        url: "/me.jpg",
+        url: "/me.webp",
         width: 1200,
         height: 630,
         alt: "Yitbarek.K — Full-stack Developer",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: "Yitbarek.K — Full-stack Developer",
     description:
       "Explore Yitbarek.K's projects, technical skills, and software development journey.",
-    images: ["/me.jpg"],
+    images: ["/me.webp"],
   },
   robots: {
     index: true,
@@ -73,8 +73,8 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body>
-        <link rel="preload" as="image" href="/me.jpg" />
-        <link rel="preload" as="image" href="/image.jpeg" />
+        <link rel="preload" as="image" href="/me.webp" />
+        <link rel="preload" as="image" href="/image.webp" />
 
         <ThemeProvider
           attribute="data-theme"
