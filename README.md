@@ -4,9 +4,8 @@
 
 **Full-Stack Developer & Software Enthusiast**
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live-success?style=for-the-badge&logo=vercel)](https://yitbarek-git.github.io/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/yitbarekk)
 [![Live App](https://img.shields.io/badge/Live_App-Vercel-181717?style=for-the-badge&logo=vercel)](https://yitbarekk.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/yitbarekk)
 [![Email](https://img.shields.io/badge/Email-Contact_Me-red?style=for-the-badge&logo=gmail)](mailto:ykifleyohans@gmail.com)
 
 *Welcome to the source code of my personal portfolio. I build reliable, user-centric web applications and enjoy exploring the depths of software engineering.*
