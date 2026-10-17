@@ -1,89 +1,27 @@
-# 🌐 Yitbarek | Front-End Web Developer Portfolio
+# Yitbarek.K — Developer Portfolio
 
-This is my personal developer portfolio website built with **HTML, CSS, and JavaScript**.  
-It showcases my skills, projects, experience, and online presence as a front-end web developer.
+A personal portfolio showcasing my projects, technical skills, development tools, and experience as a full-stack developer.
 
-Live Site: [https://yitbarek-git.github.io/](https://yitbarek-git.github.io/My-profile/)
+## TODO
 
----
+- [ ] **Complete the Projects page** — Showcase completed projects, including descriptions, technologies used, and source-code or live-demo links.
+- [ ] **Create a Tools page** — Document the development tools, software, and devices I use in my workflow.
+- [ ] **Add an Experience page** — Highlight relevant work experience, personal projects, education, and learning milestones.
+- [ ] **Update personal information** — Replace the original portfolio owner's details with my own.
+- [ ] **Review all pages** — Ensure the content, links, and navigation reflect my identity and technical interests.
 
-## 🚀 About Me
+## Technical Interests
 
-Hi, I’m **Yitbarek** — a passionate Front-End Web Developer focused on building:
+- Full-stack web development
+- C++
+- Python
+- Java
+- MySQL and database design
+- Developer tools and software engineering
 
-- Clean and modern user interfaces  
-- Fully responsive websites  
-- Fast and high-performance web experiences  
+## Development Notes
 
-I enjoy turning ideas into real, interactive websites using modern web technologies.
-
----
-
-## 🧠 What This Project Represents
-
-This portfolio is not just a website — it represents:
-
-- My journey in web development  
-- My skills in front-end engineering  
-- My commitment to continuous learning  
-- My personal brand as a developer  
-
----
-
-## ⚙️ Technologies Used
-
-- HTML5 (semantic structure + SEO optimization)
-- CSS3 (responsive design + modern styling)
-- JavaScript (interactivity & UI behavior)
-- Font Awesome (icons)
-- GitHub Pages (deployment)
-
----
-
-## 📌 Features
-
-- Responsive design (mobile-friendly)
-- Dark mode toggle
-- SEO optimized (meta tags + Open Graph + Twitter cards)
-- Social media integration (GitHub, YouTube, TikTok)
-- Clean UI/UX design
-- Fast loading performance
-- Accessibility-friendly structure
-
----
-
-## 🔗 Live Links
-
-- 🌍 Website: [https://yitbarek-git.github.io/](https://myprofile-yitbarek.netlify.app/)
-- 💻 GitHub: https://github.com/yitbarek-git
-- 📺 YouTube: https://www.youtube.com/@aplusacademy1
----
-
-## 🎯 Purpose
-
-This project was built to:
-
-- Showcase my front-end development skills  
-- Build a professional online presence  
-- Share my work with recruiters and clients worldwide  
-- Practice real-world web development standards  
-
----
-
-## 📈 Future Improvements
-
-- Add backend contact form (Node.js or Firebase)
-- Add project showcase section with filtering
-- Improve animations and micro-interactions
-- Add blog section for learning content
-
----
-
-## 👨‍💻 Author
-
-**Yitbarek**  
-Front-End Web Developer | Content Creator | Software Engineering Student
-
----
-
-⭐ If you like this project, feel free to star the repository or follow me on GitHub!
+- Preserve the existing design and working functionality.
+- Prioritize personal information and homepage updates.
+- Test changes locally before publishing.
+- Do not push changes to GitHub until the customization is complete.

@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+[data-theme="light"] {
+	color-scheme: light;
+	--background: #f2f2f2;
+	--card: #ffffff;
+	--foreground: #2d2d2d;
+	--primary: #7a40b8;
+}
+
+[data-theme="dark"] {
+	color-scheme: dark;
+	--background: #1e1e1e;
+	--card: #2a2a2a;
+	--foreground: #dccce0;
+	--primary: #bc84f8;
+	--primary-light: #8b3a0a;
+}
+
+@theme inline {
+	--color-background: var(--background);
+	--color-card: var(--card);
+	--color-foreground: var(--foreground);
+	--color-primary: var(--primary);
+
+	--font-mono: var(--font-inconsolata);
+	--font-sans: var(--font-ubuntu);
+
+	--animate-slide-in: slide-in 0.3s ease-out;
+	--animate-fade-in: fade-in 0.3s ease-out;
+}
+
+@keyframes slide-in {
+	from {
+		transform: translateX(100%);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@utility container {
+	margin-inline: auto;
+	padding-inline: 1rem;
+	max-width: var(--container-max-w, 800px);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation-duration: 300ms;
+	animation-timing-function: ease-in-out;
+}
+
+::view-transition-old(root) {
+	animation: none;
+	z-index: 1;
+}
+
+::view-transition-new(root) {
+	animation-name: theme-reveal;
+	clip-path: circle(0 at var(--theme-x) var(--theme-y));
+	z-index: 2;
+}
+
+
+@keyframes theme-reveal {
+	to {
+		clip-path: circle(var(--theme-radius) at var(--theme-x) var(--theme-y));
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	::view-transition-old(root),
+	::view-transition-new(root) {
+		animation-duration: 0ms;
+	}
+
+	.animate-slide-in,
+	.animate-fade-in {
+		animation: none;
+	}
+}
+
+body {
+	background: var(--background);
+	color: var(--foreground);
+	font-family: Ubuntu, Arial, sans-serif;
+}
+
+code,
+pre,
+kbd,
+samp {
+	font-family: Inconsolata, Consolas, monospace;
+}
+
+.old-school-btns {
+	width: auto;
+	height: auto;
+	image-rendering: auto;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+	image-rendering: -webkit-optimize-contrast;
+}
