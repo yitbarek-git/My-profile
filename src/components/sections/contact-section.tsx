@@ -25,7 +25,7 @@ const CONTACT_LINKS = [
     icon: Play,
   },
   {
-    href: "https://www.tiktok.com/@aplusacademy11",
+    href: "https://www.tiktok.com/@yitbarekk21",
     label: "TikTok",
     icon: Music2,
   },

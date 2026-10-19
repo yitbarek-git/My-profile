@@ -21,7 +21,7 @@ type TechCategory =
 const TECH_STACK: { category: TechCategory; items: string[] }[] = [
   {
     category: "Languages",
-    items: ["C++", "Python", "Java", "JavaScript", "TypeScript", "SQL"],
+    items: ["Python", "C++", "Java", "JavaScript", "TypeScript", "SQL"],
   },
   {
     category: "Frontend",

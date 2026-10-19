@@ -47,11 +47,11 @@ export default function GearPage() {
   return (
     <main className="pb-16">
       <Section>
-        <h1 className="mb-4 font-mono text-4xl font-medium">
+        <h1 className="mb-4 font-mono text-4xl font-bold tracking-tight sm:text-5xl">
           My Gear
         </h1>
 
-        <p className="mb-4">
+        <p className="mb-8 text-lg font-medium text-foreground/80 sm:text-xl">
           A look at the hardware and peripherals I use for programming,
           building web applications, learning new technologies, and
           working on personal projects.
