@@ -5,7 +5,8 @@ import { motion } from "motion/react";
 const ITEMS = [
   "full-stack developer",
   "web developer",
-  "C++ programmer",
+  "problem solver",
+  "building Aplus Academy",
   "Python developer",
   "Java programmer",
   "database enthusiast",
@@ -13,12 +14,7 @@ const ITEMS = [
   "building Aplus Academy",
   "full-stack developer",
   "web developer",
-  "C++ programmer",
-  "Python developer",
-  "Java programmer",
   "database enthusiast",
-  "problem solver",
-  "building Aplus Academy",
 ];
 
 export default function MarqueeSection() {

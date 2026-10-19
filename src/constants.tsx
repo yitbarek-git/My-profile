@@ -9,4 +9,4 @@ export const EMAIL: string =
   "ykifleyohans@gmail.com";
 
 export const SITE_URL: string =
-  "https://yitbarek-git.github.io/";
+  "https://yitbarekk.vercel.app/";
