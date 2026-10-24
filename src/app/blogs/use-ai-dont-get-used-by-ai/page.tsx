@@ -1,3 +1,4 @@
+import SocialActions from "@/components/social-actions";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
@@ -161,7 +162,7 @@ export default function BlogPostPage() {
             Don’t get used by AI.
           </p>
         </div>
-
+        <SocialActions title="Use AI, Don’t Get Used by AI" />
         {/* Author footer */}
         <footer className="mt-20 md:mt-28 max-w-2xl mx-auto pt-10 border-t border-foreground/15">
           <div className="flex items-center gap-4">

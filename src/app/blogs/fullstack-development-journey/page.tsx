@@ -1,3 +1,4 @@
+import SocialActions from "@/components/social-actions";
 import Link from "next/link";
 import Section from "@/components/section";
 
@@ -383,7 +384,7 @@ button.addEventListener("click", () => {
               path forward.
             </p>
           </article>
-
+          <SocialActions title="My Fullstack Development Journey" />
           {/* Author footer */}
           <footer className="mx-auto mt-16 max-w-3xl border-t border-muted pt-10 md:mt-20">
             <div className="flex items-center gap-5 rounded-2xl border border-muted bg-muted/20 p-6 md:p-8">

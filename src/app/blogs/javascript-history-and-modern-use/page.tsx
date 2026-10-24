@@ -1,3 +1,4 @@
+import SocialActions from "@/components/social-actions";
 import Link from "next/link";
 import Section from "@/components/section";
 
@@ -426,7 +427,7 @@ button.addEventListener("click", () => {
                 learning from mistakes.
               </p>
             </section>
-
+            <SocialActions title="JavaScript: From a Simple Script to the Modern Web" />
             <footer className="border-t border-muted pt-6">
               <p className="text-sm text-foreground/70">
                 Keep learning. Keep building. Understand the code you write.
