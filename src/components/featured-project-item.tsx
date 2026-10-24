@@ -38,7 +38,7 @@ export default function FeaturedProjectItem({
             >
               <Image
                 src="/google-play-button.webp"
-                alt="Get it on Google Play"
+                alt="get it on github"
                 width={189}
                 height={56}
                 className="h-14 w-auto"
