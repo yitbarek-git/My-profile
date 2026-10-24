@@ -21,6 +21,15 @@ const posts = [
     readTime: "5 min read",
     tag: "Personal Story",
   },
+  {
+    slug: "javascript-history-and-modern-use",
+    title: "JavaScript: From a Simple Script to the Modern Web",
+    description:
+      "Explore JavaScript's history, evolution, core capabilities, modern applications, and why it remains one of the most important programming languages.",
+    date: "Oct 25, 2026",
+    readTime: "9 min read",
+    tag: "JavaScript",
+  },
 ];
 
 export const metadata = {
