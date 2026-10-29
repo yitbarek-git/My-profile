@@ -88,7 +88,7 @@ export default function PythonBeginnersGuidePage() {
               <div className="mt-6 aspect-video overflow-hidden rounded-xl border border-muted">
                 <iframe
                   className="h-full w-full"
-                  src="https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID"
+                  src="https://youtu.be/YjSlnZJs4mk?si=1zZtTe1XwkayXR6R"
                   title="Python Programming in Amharic - Part 1"
                   loading="lazy"
                   referrerPolicy="strict-origin-when-cross-origin"
