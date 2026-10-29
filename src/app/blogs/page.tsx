@@ -30,6 +30,15 @@ const posts = [
     readTime: "9 min read",
     tag: "JavaScript",
   },
+  {
+    slug: "python-beginners-guide",
+    title: "Python Programming: A Beginner's Guide",
+    description:
+      "Explore Python fundamentals, practical applications, and programming concepts, with an Amharic tutorial for Ethiopian students.",
+    date: "Oct 29, 2026",
+    readTime: "8 min read",
+    tag: "Python · Amharic",
+  },
 ];
 
 export const metadata = {
